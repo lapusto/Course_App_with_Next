@@ -7,6 +7,7 @@
     font-size: 18px;
     line-height: 25px;
     margin-top: 20px;
+    
 }
 
 .firstLevelActive,
@@ -20,11 +21,12 @@
 } 
 
 .secondLevel {
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 13px;
     cursor: pointer;
     text-transform: uppercase;
     color: var(--grey-dark);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
 }
@@ -32,17 +34,16 @@
 .secondBlock {
     margin-top: 15px;
     margin-left: 12px;
-    padding-right: 32px;
+    padding-left: 32px;
     border-left: 1px solid #DFDFDF;
 }
 .secondLevelBlockOpened:last-child {
     margin-bottom: 20px;
-
 }
 
 .thirdLevel {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     cursor: pointer;
     color: var(--grey-dark);
     font-weight: 500;
