@@ -37,6 +37,15 @@
     padding-left: 32px;
     border-left: 1px solid #DFDFDF;
 }
+
+.secondLevelBlock {
+    display: none;
+}
+
+.secondLevelBlockOpened {
+    display: block;
+}
+
 .secondLevelBlockOpened:last-child {
     margin-bottom: 20px;
 }
