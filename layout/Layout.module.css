@@ -33,7 +33,7 @@ gap: 0 30px;
       "footer ";
   }
   .sidebar {
-    display: none;
+    display: none !important;
   }
   .header {
     display: block;
