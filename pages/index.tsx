@@ -4,6 +4,7 @@ import { Button, Htag, P, Rating, Tag } from "../components";
 import { withLayout } from "../layout/Layout";
 import axios from 'axios';
 import { MenuItem } from "../interfaces/menu.interface";
+import { Input } from "../components/Input/Input";
 
 interface HomeProps extends Record<string, unknown> {
   menu: MenuItem[],
@@ -26,6 +27,7 @@ interface HomeProps extends Record<string, unknown> {
  <Tag size="m" color="green">большой</Tag>
  <Tag size="s" color="primary">smal</Tag>
  <Rating isEditable rating={rating} setRaiting={setRating} />
+ <Input/>
       </>
   );
 }
