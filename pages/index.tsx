@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 import {  useState } from "react";
-import { Button, Htag, P, Rating, Tag } from "../components";
+import { Button, Htag, P, Rating, Tag, Textarea } from "../components";
 import { withLayout } from "../layout/Layout";
 import axios from 'axios';
 import { MenuItem } from "../interfaces/menu.interface";
@@ -28,6 +28,7 @@ interface HomeProps extends Record<string, unknown> {
  <Tag size="s" color="primary">smal</Tag>
  <Rating isEditable rating={rating} setRaiting={setRating} />
  <Input/>
+ <Textarea/>
       </>
   );
 }
