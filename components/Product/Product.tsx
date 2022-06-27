@@ -1,7 +1,7 @@
 import styles from './Product.module.css';
 import { ProductProps } from './Product.props';
 import cn from 'classnames';
-import { Card } from '../Card/Card';
+
 import { Rating } from '../Rating/Rating';
 import { Tag } from '../Tag/Tag';
 import { Button } from '../Button/Button';
@@ -9,7 +9,7 @@ import { priceRub, titleCounter } from '../../helpers/helpers';
 import { Divider } from '../Divider/Divider';
 import Image from 'next/image';
 import { useState } from 'react';
-import { Review } from '../Review/Review';
+import { Card, Review, ReviewForm } from '..';
 
 export const Product = ({ product, className, ...props }: ProductProps): JSX.Element => {
     const [isReviewOpen, setIsReviewOpen ] = useState<Boolean>(false)
@@ -82,6 +82,8 @@ export const Product = ({ product, className, ...props }: ProductProps): JSX.Ele
         })}>
             { product.reviews.length == 0 && "Здесь пока нет ни одного отзыва" }
            { product.reviews.length > 0 && product.reviews.map( r => <Review review={r} key={r._id}/>)}
+           <Divider />
+           <ReviewForm productId={product._id}/>
         </Card>
         </>
     );
